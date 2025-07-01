@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="MakerSpace, Making, Zuckerwatte, Ak, Technik, Popcorn">
+    <meta name="description" content="Mache hier deine Bestellungen am Stand vom AK Technik / MakerSpace, bezahle online deine Artikel oder bar an der Ausgabe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlungssystem</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link zur externen CSS-Datei -->
+    <link rel="manifest" href="mainfest.json">
+</head>
+<body>
+
+    <!-- Startscreen -->
+    <div id="startscreen" class="content">
+        <h1>Deine Bestellung beim Ak Technik / MakerSpace</h1>
+        <h3>Zuckerwatte und Popcorn und vieles mehr...</h3>
+        <div class="button" id="losGehtsButton">Jetzt bestellen!</div>
+    </div>
+
+        <!-- Angebotsbereich (Zunächst versteckt) -->
+    <div id="angeboteSection" class="angebote-section" style="display: none;">
+        <h1>Unsere Angebote</h1>
+
+        <!-- Angebots-Karten -->
+        <div class="angebote-container">
+            <div class="angebot">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.xtreme-events.de%2Fwp-content%2Fuploads%2Fzuckerwatte.jpg&f=1&nofb=1&ipt=907903aa87e312d230b89a44290c427a71e7f2792c823960809f18faada48138" alt="Zuckerwatte">
+                <div class="angebot-info">
+                    <h2>Zuckerwatte</h2>
+                    <p>Leckere Zuckerwatte. Mit bissale Glück macht Max wieder den Schneemann.</p>
+                    <p class="preis">Überteuert</p>
+                </div>
+                <button class="button" id="bestellen">Bestellen</button>
+            </div>
+
+            <div class="angebot">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.danato.com%2Fmedia%2F6a%2F68%2F39%2F1685013969%2Fice-rolls-selber-machen-diy-set-blau-31e29f.jpg&f=1&nofb=1&ipt=11fc4b73d019a0f62b78e33794960750ba8d3b6b09cd30ba01a731bfeef75fa3" alt="Eiscreme">
+                <div class="angebot-info">
+                    <h2>Eiscreme</h2>
+                    <p>Lecker und auf unser nicht Existenten Maschine zubereitet.</p>
+                    <p class="preis">4,00 €</p>
+                </div>
+                <button class="button" id="bestellen3m">Bestellen</button>
+            </div>
+
+            <div class="angebot">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.wisegeek.com%2Fbowl-of-popcorn.jpg&f=1&nofb=1&ipt=b0713e622d3eb5fdc6d1fad3a69ee69ee3a6eb7ad998e8b12fc8af32a6ad93a2" alt="Popcorn">
+                <div class="angebot-info">
+                    <h2>Popcorn</h2>
+                    <p>Damit man isch beim Sommerkonzert wie im Kino fühlt.</p>
+                    <p class="preis">3,50 €</p>
+                </div>
+                <button class="button" id="bestellen2m">Bestellen</button>
+            </div>
+        </div>
+    </div>
+
+    <div id ="zahlenher" class="angebote-section" style="display: none;">
+        <h1>Wie willst du zahlen?</h1>
+        <button class="button" id="Paypal">Paypal</button><br>
+        <button class="button" id="Credit Card">Kredit / Debit Karte</button><br>
+        <button class="button" id="Bar">Bar</button><br>
+        <p> </p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
